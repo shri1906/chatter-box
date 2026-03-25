@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── Theme: dark (default / WhatsApp) ─────────────────────────────────────── */
+:root, [data-theme="dark"] {
+  --bg:       #111B21;
+  --panel:    #202C33;
+  --panel-2:  #2A3942;
+  --hover:    #2D3B45;
+  --out:      #005C4B;
+  --in:       #202C33;
+  --chat-bg:  #0B141A;
+  --green:    #00A884;
+  --green-l:  #25D366;
+  --text:     #E9EDEF;
+  --text-2:   #8696A0;
+  --text-3:   #667781;
+  --divider:  #222D34;
+  --input-bg: #2A3942;
+  --tick:     #25D366;
+  --dot-color:rgba(255,255,255,0.018);
+  --online-border: #111B21;
+  --file-bg:  #1D2F38;
+  --file-icon:#00A884;
+}
+
+/* ── Theme: light ──────────────────────────────────────────────────────────── */
+[data-theme="light"] {
+  --bg:       #F0F2F5;
+  --panel:    #FFFFFF;
+  --panel-2:  #F0F2F5;
+  --hover:    #E8EDF0;
+  --out:      #D9FDD3;
+  --in:       #FFFFFF;
+  --chat-bg:  #EFEAE2;
+  --green:    #008069;
+  --green-l:  #25D366;
+  --text:     #111B21;
+  --text-2:   #54656F;
+  --text-3:   #8696A0;
+  --divider:  #E9EDEF;
+  --input-bg: #F0F2F5;
+  --tick:     #53BDEB;
+  --dot-color:rgba(0,0,0,0.04);
+  --online-border: #F0F2F5;
+  --file-bg:  #E8F5E9;
+  --file-icon:#008069;
+}
+
+/* ── Theme: ocean ──────────────────────────────────────────────────────────── */
+[data-theme="ocean"] {
+  --bg:       #0A1628;
+  --panel:    #0F2137;
+  --panel-2:  #162944;
+  --hover:    #1A3352;
+  --out:      #0D47A1;
+  --in:       #0F2137;
+  --chat-bg:  #061020;
+  --green:    #29B6F6;
+  --green-l:  #4FC3F7;
+  --text:     #E1F5FE;
+  --text-2:   #81D4FA;
+  --text-3:   #4FC3F7;
+  --divider:  #162944;
+  --input-bg: #162944;
+  --tick:     #29B6F6;
+  --dot-color:rgba(41,182,246,0.04);
+  --online-border: #0A1628;
+  --file-bg:  #0D2137;
+  --file-icon:#29B6F6;
+}
+
+/* ── Theme: rose ───────────────────────────────────────────────────────────── */
+[data-theme="rose"] {
+  --bg:       #1A0A0F;
+  --panel:    #2D1017;
+  --panel-2:  #3D1820;
+  --hover:    #4A1E28;
+  --out:      #7B1FA2;
+  --in:       #2D1017;
+  --chat-bg:  #110308;
+  --green:    #F48FB1;
+  --green-l:  #F06292;
+  --text:     #FCE4EC;
+  --text-2:   #F48FB1;
+  --text-3:   #CE93D8;
+  --divider:  #3D1820;
+  --input-bg: #3D1820;
+  --tick:     #F48FB1;
+  --dot-color:rgba(244,143,177,0.04);
+  --online-border: #1A0A0F;
+  --file-bg:  #2D1020;
+  --file-icon:#F48FB1;
+}
+
+html, body, #__next { height: 100%; }
+body {
+  background: var(--bg);
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.3s, color 0.3s;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--text-3); border-radius: 10px; }

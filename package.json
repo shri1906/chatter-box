@@ -1,0 +1,26 @@
+{
+  "name": "chatterbox",
+  "version": "3.0.0",
+  "scripts": {
+    "dev": "node -r dotenv/config server.js dotenv_config_path=.env.local",
+    "build": "next build",
+    "start": "NODE_ENV=production node -r dotenv/config server.js dotenv_config_path=.env.local"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "bcryptjs": "^2.4.3",
+    "date-fns": "^3.6.0",
+    "dotenv": "^16.4.5",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.4",
+    "next": "^16.1.6",
+    "react": "^18",
+    "react-dom": "^18",
+    "socket.io": "^4.7.4",
+    "socket.io-client": "^4.7.4",
+    "uuid": "^9.0.0"
+  }
+}

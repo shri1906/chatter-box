@@ -1,0 +1,122 @@
+@import "https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap";
+/* [project]/src/app/globals.css [app-client] (css) */
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root, [data-theme="dark"] {
+  --bg: #111b21;
+  --panel: #202c33;
+  --panel-2: #2a3942;
+  --hover: #2d3b45;
+  --out: #005c4b;
+  --in: #202c33;
+  --chat-bg: #0b141a;
+  --green: #00a884;
+  --green-l: #25d366;
+  --text: #e9edef;
+  --text-2: #8696a0;
+  --text-3: #667781;
+  --divider: #222d34;
+  --input-bg: #2a3942;
+  --tick: #25d366;
+  --dot-color: #ffffff05;
+  --online-border: #111b21;
+  --file-bg: #1d2f38;
+  --file-icon: #00a884;
+}
+
+[data-theme="light"] {
+  --bg: #f0f2f5;
+  --panel: #fff;
+  --panel-2: #f0f2f5;
+  --hover: #e8edf0;
+  --out: #d9fdd3;
+  --in: #fff;
+  --chat-bg: #efeae2;
+  --green: #008069;
+  --green-l: #25d366;
+  --text: #111b21;
+  --text-2: #54656f;
+  --text-3: #8696a0;
+  --divider: #e9edef;
+  --input-bg: #f0f2f5;
+  --tick: #53bdeb;
+  --dot-color: #0000000a;
+  --online-border: #f0f2f5;
+  --file-bg: #e8f5e9;
+  --file-icon: #008069;
+}
+
+[data-theme="ocean"] {
+  --bg: #0a1628;
+  --panel: #0f2137;
+  --panel-2: #162944;
+  --hover: #1a3352;
+  --out: #0d47a1;
+  --in: #0f2137;
+  --chat-bg: #061020;
+  --green: #29b6f6;
+  --green-l: #4fc3f7;
+  --text: #e1f5fe;
+  --text-2: #81d4fa;
+  --text-3: #4fc3f7;
+  --divider: #162944;
+  --input-bg: #162944;
+  --tick: #29b6f6;
+  --dot-color: #29b6f60a;
+  --online-border: #0a1628;
+  --file-bg: #0d2137;
+  --file-icon: #29b6f6;
+}
+
+[data-theme="rose"] {
+  --bg: #1a0a0f;
+  --panel: #2d1017;
+  --panel-2: #3d1820;
+  --hover: #4a1e28;
+  --out: #7b1fa2;
+  --in: #2d1017;
+  --chat-bg: #110308;
+  --green: #f48fb1;
+  --green-l: #f06292;
+  --text: #fce4ec;
+  --text-2: #f48fb1;
+  --text-3: #ce93d8;
+  --divider: #3d1820;
+  --input-bg: #3d1820;
+  --tick: #f48fb1;
+  --dot-color: #f48fb10a;
+  --online-border: #1a0a0f;
+  --file-bg: #2d1020;
+  --file-icon: #f48fb1;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  font-family: DM Sans, sans-serif;
+  transition: background .3s, color .3s;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-3);
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=src_app_globals_91e4631d.css.map*/
