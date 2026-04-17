@@ -17,8 +17,8 @@ const Message          = require('./src/models/Message');
 const Room             = require('./src/models/Room');
 
 const dev        = process.env.NODE_ENV !== 'production';
-const JWT_SECRET = process.env.JWT_SECRET || 'chatterbox-dev-secret-change-in-prod';
-const MONGO_URI  = process.env.MONGODB_URI || 'mongodb://localhost:27017/chatterbox';
+const JWT_SECRET = process.env.JWT_SECRET;
+const MONGO_URI  = process.env.MONGODB_URI;
 
 const app    = next({ dev });
 const handle = app.getRequestHandler();
