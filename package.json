@@ -1,11 +1,11 @@
 {
   "name": "chatterbox",
   "version": "3.0.0",
-  "scripts": {
-    "dev": "node -r dotenv/config server.js dotenv_config_path=.env.local",
-    "build": "next build",
-    "start": "NODE_ENV=production node -r dotenv/config server.js dotenv_config_path=.env.local"
-  },
+"scripts": {
+  "dev": "node -r dotenv/config server.js dotenv_config_path=.env.local",
+  "build": "next build --webpack",
+  "start": "NODE_ENV=production node -r dotenv/config server.js dotenv_config_path=.env.local"
+},
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
